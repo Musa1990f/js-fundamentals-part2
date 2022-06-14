@@ -73,10 +73,10 @@ function percentageOfWorld1(worldPopulation){
   return (1441 / worldPopulation) * 100;
 }
 
-const Japan = percentageOfWorld1(1888);
+// const Japan = percentageOfWorld1(1888);
 const Peru = percentageOfWorld1(2000);
 const Brazil = percentageOfWorld1(3879);
-console.log(Japan,Peru,Brazil);
+// console.log(Japan,Peru,Brazil);
 
 // Function expression
 
@@ -89,4 +89,33 @@ const dubai = percentageOfWorld2(2873);
 const oman = percentageOfWorld2(5674);
 console.log(qatar,dubai,oman)
 
+const worldMoney = 102304;
 
+function descibeMoney(worldMoney){
+  return (166 / worldMoney) * 100;
+}
+const sudan = descibeMoney(123);
+console.log(sudan)
+
+const world2 = function(worldMoney){
+  return (166 / worldMoney) * 100;
+
+}
+const cuba = world2(1567)
+console. log(cuba)
+
+// Arrow Functions
+const percentageOfWorld3 = worldPopulation => (1441 / worldMoney) *100;
+const Kuwait = percentageOfWorld3(6788);
+console.log(Kuwait);
+
+
+// // functions calling other functions
+
+// function descibePopullation(country,population){
+//   const Japan = percentageOfWorld1(1888);
+//   return `${country} has ${population} million people`;
+
+
+// }
+// console.log(descibePopullation(9,6))
