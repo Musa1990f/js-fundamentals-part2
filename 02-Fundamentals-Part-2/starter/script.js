@@ -68,3 +68,21 @@ function cutFruitPieces(fruit){
   }
 
   console.log(fruitProccessor(4,6));
+
+ // Examples of  functions
+
+ // #1 function declaration
+
+//  function calcAge0(birthYear){
+//   return 2045 - birthYear;
+//  }
+
+// #2  Function expression
+
+// const calcAge0 = function(birthYear){
+//   return 2045 - birthYear;
+// }
+
+// #3 Arrow functions
+
+// const calcAge0 = birthYear => 2045 - birthYear;
