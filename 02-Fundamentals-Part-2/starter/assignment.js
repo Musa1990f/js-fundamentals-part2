@@ -110,12 +110,17 @@ const Kuwait = percentageOfWorld3(6788);
 console.log(Kuwait);
 
 
-// // functions calling other functions
+// functions calling other functions
+ 
+ 
 
-// function descibePopullation(country,population){
-//   const Japan = percentageOfWorld1(1888);
-//   return `${country} has ${population} million people`;
+function descibePopullation(country,population){
+ 
+  return `${country} has ${population} million people`;
 
 
-// }
-// console.log(descibePopullation(9,6))
+}
+console.log(descibePopullation('Japan', 23));
+console.log(descibePopullation('China', 67));
+console.log(descibePopullation('India',345));
+
