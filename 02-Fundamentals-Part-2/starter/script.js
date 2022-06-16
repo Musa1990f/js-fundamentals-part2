@@ -71,18 +71,25 @@ function cutFruitPieces(fruit){
 
  // Examples of  functions
 
+//  ### function is used before declaration!!!!
+
  // #1 function declaration
 
 //  function calcAge0(birthYear){
 //   return 2045 - birthYear;
 //  }
 
+
 // #2  Function expression
+// ### function is stored in a variable!!!
 
 // const calcAge0 = function(birthYear){
 //   return 2045 - birthYear;
 // }
 
 // #3 Arrow functions
-
+// ### one line function && has no this. keyword!!!
 // const calcAge0 = birthYear => 2045 - birthYear;
+
+// 👆👆👆 Three different ways of writing Functions,but all work in a similar way,
+// receive input data , transform data and output data!!!
