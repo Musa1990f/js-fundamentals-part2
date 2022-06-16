@@ -127,3 +127,18 @@ console.log(descibePopullation('India',345));
 // Arrays
 
 const population = ['Tai','Laos','Malaysia','Taipei'];
+console.log(population.length);
+
+
+
+const percentageOfWorld = function(worldPopulation){
+  return (1441 / worldPopulation) * 100;
+}
+
+
+const percentages = [234,456,344,231];
+const world = percentageOfWorld(percentages[0]);
+const world5 = percentageOfWorld(percentages[1]);
+const world6 = percentageOfWorld(percentages[2]);
+const world7 = percentageOfWorld(percentages[percentages.length - 1]);
+console.log(percentages);
