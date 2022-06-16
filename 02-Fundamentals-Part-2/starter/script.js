@@ -93,3 +93,73 @@ function cutFruitPieces(fruit){
 
 // 👆👆👆 Three different ways of writing Functions,but all work in a similar way,
 // receive input data , transform data and output data!!!
+
+
+
+
+// **********ARRAYS***********
+
+const friends = ['Micheal', 'John', 'James'];
+console.log(friends);
+
+// This can also be used!!
+const yr = new Array(1999, 2000, 2374);
+console.log(yr);
+
+// How to get out Arrays!
+console.log(friends[0]);
+console.log(friends[2]);
+
+// How to find actul number in a Array!
+console.log(friends.length);
+
+// how to get index fro the last array!!
+console.log(friends[friends.length - 1]);
+
+// How to change or mutate an array!!
+
+friends[2] = 'Jay';
+console.log(friends);
+
+// Array can hold different types of values at the same time!!
+const firstName = 'musa';
+const musa = [firstName,'faridu', 2022 - 1990, friends];
+console.log(musa.length);
+
+// Exercise
+
+const calcAge = function(birthYear) {
+     return 2044 - birthYear;
+     }
+
+const years = [1999,1987,1890,];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age4 = calcAge(years[years.length - 1 ]);
+console.log(age1,age2,age4);
+
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])];
+console.log(ages);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* N.B Array are not primitive values, they can be changed or mutated with const keyword */

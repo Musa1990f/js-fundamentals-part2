@@ -124,3 +124,6 @@ console.log(descibePopullation('Japan', 23));
 console.log(descibePopullation('China', 67));
 console.log(descibePopullation('India',345));
 
+// Arrays
+
+const population = ['Tai','Laos','Malaysia','Taipei'];
