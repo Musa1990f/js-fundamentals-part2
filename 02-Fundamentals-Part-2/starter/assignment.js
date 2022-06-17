@@ -142,3 +142,19 @@ const world5 = percentageOfWorld(percentages[1]);
 const world6 = percentageOfWorld(percentages[2]);
 const world7 = percentageOfWorld(percentages[percentages.length - 1]);
 console.log(percentages);
+
+// Array methods
+
+const neighbours = ['Germany','Poland','Sweden'];
+neighbours.push('Utopia');
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if(neighbours.includes('Germany')){ 
+console.log('Probaly not a central European country:D'); }
+
+neighbours.indexOf('Sweden');
+neighbours.unshift('Repbulic of Sweden');
+console.log(neighbours);
