@@ -173,6 +173,67 @@ if (friends.includes('James')) {
 }
 
 
+// Objects
+
+const musaArray = [
+  'musa',
+  'Faridu',
+  2022 - 1990,
+  'programmer'
+  ['nasa',
+'Joe', 'Ibra'],
+]
+
+const musa = {
+  firstName: 'musa',
+  lastName: 'Faridu',
+  year : 2022 - 1990,
+  job: 'programmer',
+  buddies: ['nasa','Joel','Ibra']
+
+}
+console.log(musa);
+
+// Dot notation
+
+console.log(musa.lastName);
+
+// Bracket notation
+
+console.log(musa['lastName']);
+
+const nameKey = 'Name';
+console.log(musa['first' + nameKey]);
+console.log(musa['last' + nameKey]);
+
+// Using Prompt
+
+const InterestedIn = prompt('What do you want to know about musa ? Choose between firstName, lastName, year,job and buddies.');
+
+
+// if something does not exist in the promt e.g location ,we  use if statements
+
+if(musa[InterestedIn]){
+  console.log(musa[InterestedIn]);
+}else {
+  console.log('Wrong request !choose between firstName,lastName,year,job and buddies' )
+}
+
+// Dot notation
+musa.location = 'Tokyo';
+console.log(musa.location);
+
+// Bracket notation 
+musa['Twitter'] = '@faridumusa';
+console.log(musa);
+
+// Challenge
+
+// Musa has 3 friends and his best friend is Ibra
+
+console.log(`${musa.firstName} has ${musa.buddies.length} friends and his best friend is called ${musa.buddies[2]} `);
+
+
 
 
 

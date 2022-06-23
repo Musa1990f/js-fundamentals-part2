@@ -158,3 +158,33 @@ console.log('Probaly not a central European country:D'); }
 neighbours.indexOf('Sweden');
 neighbours.unshift('Repbulic of Sweden');
 console.log(neighbours);
+
+// Objects
+
+/*1. Create an object called 'myCountry' for a country of your choice, containing 
+properties 'country', 'capital', 'language', 'population' and 
+'neighbours' (an array like we used in previous assignments) */
+
+
+const muCountry = {
+  country: 'Finland',
+  capital: 'Helsinki',
+  language: 'finnish',
+  population: 6,
+  neighbours: ['Newzeland','Fiji','Samoa']
+}
+
+/*1. Using the object from the previous assignment, log a string like this to the 
+console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries 
+and a capital called Helsinki.'
+
+2. Increase the country's population by two million using dot notation, and then 
+decrease it by two million using brackets notation*/
+
+console.log(`${muCountry.country} has ${muCountry.population} million ${muCountry.language}-speaking people,${muCountry.neighbours.length} neighbouring countries  a capital called ${muCountry.capital}`);
+
+muCountry.population = 8;
+console.log(muCountry);
+
+muCountry['population'] = 6;
+console.log(muCountry);
