@@ -234,15 +234,46 @@ console.log(musa);
 console.log(`${musa.firstName} has ${musa.buddies.length} friends and his best friend is called ${musa.buddies[2]} `);
 
 
+// Objects method
+
+const yuka = {
+  firstName: 'lukenge',
+  lastName: 'Yuka',
+  birthYeah: 1990,
+  job: 'Night nurse',
+  friends:['Mai','Mei','Moi'],
+  hasDriversLicesence: true,
+
+  // calcAge: function(birthYeah){
+  //   return 2022 - birthYeah;
+  // }
+
+  calcAge: function(){
+    console.log(this);
+    return 2022 - this.birthYeah;
+  },
+
+  // Challenge #2
+
+  // Yuka is 32 years old night nurse, and has a drivers lisence
+
+  getSummary: function(){
+     return `${this.lastName} is a ${this.calcAge()} -year old ${yuka.job}, and has ${this.hasDriversLicesence ? 'a' : 'no'} drivers lisence.`
+  }
+
+  
+
+}
+
+console.log(yuka.calcAge());
 
 
 
+//console.log(`${yuka.lastName} has ${yuka.calcAge()} years old ${yuka.job} and  ${yuka.hasDriversLicesence} has a drivers lisence `);
 
 
 
-
-
-
+console.log(yuka.getSummary());
 
 
 
