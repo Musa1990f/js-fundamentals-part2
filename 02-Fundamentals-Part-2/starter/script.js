@@ -142,138 +142,138 @@
 // console.log(ages);
 
 // Array methods 
-const friends = ['Micheal', 'John', 'James'];
+// const friends = ['Micheal', 'John', 'James'];
 
-// adds elements into array!!
-friends.push('musa');
-console.log(friends);
-const newLength = friends.push('musa');
+// // adds elements into array!!
+// friends.push('musa');
+// console.log(friends);
+// const newLength = friends.push('musa');
 
-friends.unshift('John');
-console.log(friends);
+// friends.unshift('John');
+// console.log(friends);
 
-// removes elements
-friends.pop();
-console.log(friends);
-const popped = friends.pop();
-console.log(popped);
+// // removes elements
+// friends.pop();
+// console.log(friends);
+// const popped = friends.pop();
+// console.log(popped);
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf('Micheal'));
-console.log(friends.indexOf('Bob'));
+// console.log(friends.indexOf('Micheal'));
+// console.log(friends.indexOf('Bob'));
 
-// Includes is used for conditions
-console.log(friends.includes('John'));
-console.log(friends.includes('Bob'));
+// // Includes is used for conditions
+// console.log(friends.includes('John'));
+// console.log(friends.includes('Bob'));
 
-if (friends.includes('James')) {
-  console.log('You have a friend called James');
-}
-
-
-// Objects
-
-const musaArray = [
-  'musa',
-  'Faridu',
-  2022 - 1990,
-  'programmer'
-  ['nasa',
-'Joe', 'Ibra'],
-]
-
-const musa = {
-  firstName: 'musa',
-  lastName: 'Faridu',
-  year : 2022 - 1990,
-  job: 'programmer',
-  buddies: ['nasa','Joel','Ibra']
-
-}
-console.log(musa);
-
-// Dot notation
-
-console.log(musa.lastName);
-
-// Bracket notation
-
-console.log(musa['lastName']);
-
-const nameKey = 'Name';
-console.log(musa['first' + nameKey]);
-console.log(musa['last' + nameKey]);
-
-// Using Prompt
-
-const InterestedIn = prompt('What do you want to know about musa ? Choose between firstName, lastName, year,job and buddies.');
+// if (friends.includes('James')) {
+//   console.log('You have a friend called James');
+// }
 
 
-// if something does not exist in the promt e.g location ,we  use if statements
+// // Objects
 
-if(musa[InterestedIn]){
-  console.log(musa[InterestedIn]);
-}else {
-  console.log('Wrong request !choose between firstName,lastName,year,job and buddies' )
-}
+// const musaArray = [
+//   'musa',
+//   'Faridu',
+//   2022 - 1990,
+//   'programmer'
+//   ['nasa',
+// 'Joe', 'Ibra'],
+// ]
 
-// Dot notation
-musa.location = 'Tokyo';
-console.log(musa.location);
+// const musa = {
+//   firstName: 'musa',
+//   lastName: 'Faridu',
+//   year : 2022 - 1990,
+//   job: 'programmer',
+//   buddies: ['nasa','Joel','Ibra']
 
-// Bracket notation 
-musa['Twitter'] = '@faridumusa';
-console.log(musa);
+// }
+// console.log(musa);
 
-// Challenge
+// // Dot notation
 
-// Musa has 3 friends and his best friend is Ibra
+// console.log(musa.lastName);
 
-console.log(`${musa.firstName} has ${musa.buddies.length} friends and his best friend is called ${musa.buddies[2]} `);
+// // Bracket notation
+
+// console.log(musa['lastName']);
+
+// const nameKey = 'Name';
+// console.log(musa['first' + nameKey]);
+// console.log(musa['last' + nameKey]);
+
+// // Using Prompt
+
+// const InterestedIn = prompt('What do you want to know about musa ? Choose between firstName, lastName, year,job and buddies.');
 
 
-// Objects method
+// // if something does not exist in the promt e.g location ,we  use if statements
 
-const yuka = {
-  firstName: 'lukenge',
-  lastName: 'Yuka',
-  birthYeah: 1990,
-  job: 'Night nurse',
-  friends:['Mai','Mei','Moi'],
-  hasDriversLicesence: true,
+// if(musa[InterestedIn]){
+//   console.log(musa[InterestedIn]);
+// }else {
+//   console.log('Wrong request !choose between firstName,lastName,year,job and buddies' )
+// }
 
-  // calcAge: function(birthYeah){
-  //   return 2022 - birthYeah;
-  // }
+// // Dot notation
+// musa.location = 'Tokyo';
+// console.log(musa.location);
 
-  calcAge: function(){
-    console.log(this);
-    return 2022 - this.birthYeah;
-  },
+// // Bracket notation 
+// musa['Twitter'] = '@faridumusa';
+// console.log(musa);
 
-  // Challenge #2
+// // Challenge
 
-  // Yuka is 32 years old night nurse, and has a drivers lisence
+// // Musa has 3 friends and his best friend is Ibra
 
-  getSummary: function(){
-     return `${this.lastName} is a ${this.calcAge()} -year old ${yuka.job}, and has ${this.hasDriversLicesence ? 'a' : 'no'} drivers lisence.`
-  }
+// console.log(`${musa.firstName} has ${musa.buddies.length} friends and his best friend is called ${musa.buddies[2]} `);
+
+
+// // Objects method
+
+// const yuka = {
+//   firstName: 'lukenge',
+//   lastName: 'Yuka',
+//   birthYeah: 1990,
+//   job: 'Night nurse',
+//   friends:['Mai','Mei','Moi'],
+//   hasDriversLicense: true,
+
+//   // calcAge: function(birthYeah){
+//   //   return 2022 - birthYeah;
+//   // }
+
+//   calcAge: function(){
+//     console.log(this);
+//     return 2022 - this.birthYeah;
+//   },
+
+//   // Challenge #2
+
+//   // Yuka is 32 years old night nurse, and has a drivers license
+
+//   getSummary: function(){
+//      return `${this.lastName} is a ${this.calcAge()} -year old ${yuka.job}, and has ${this.hasDriversLicense ? 'a' : 'no'} drivers lisence.`
+//   }
 
   
 
-}
+// }
 
-console.log(yuka.calcAge());
-
-
-
-//console.log(`${yuka.lastName} has ${yuka.calcAge()} years old ${yuka.job} and  ${yuka.hasDriversLicesence} has a drivers lisence `);
+// console.log(yuka.calcAge());
 
 
 
-console.log(yuka.getSummary());
+// //console.log(`${yuka.lastName} has ${yuka.calcAge()} years old ${yuka.job} and  ${yuka.hasDriversLicesence} has a drivers lisence `);
+
+
+
+// console.log(yuka.getSummary());
 
 
 
@@ -284,3 +284,88 @@ console.log(yuka.getSummary());
 
 
 /* N.B Array are not primitive values, they can be changed or mutated with const keyword */
+
+
+// Loops
+
+//for loops keep running while the Condition is true!
+
+// for(let rep = 1; rep <= 10; rep++){
+//   console.log(`Lifting weight repetitions ${rep} `)
+// }
+
+// const jonas = [
+//   'Jonas',
+//   'Kinsman',
+//   2023 - 1990,
+//   'teacher',
+//   ['Mike','Mai','Steve'],
+//   true
+// ]
+
+// const types = [];
+
+//    for(i = 0; i < jonas.length ; i++){
+//     // Reading from jonas array
+//     console.log(jonas[i], typeof jonas[i]);
+
+//     // filling types array
+
+//     //types[i] = typeof jonas[i];
+//     types.push(typeof jonas[i])
+//    }
+
+//    console.log(types)
+  
+// // example #2
+//    const years = [1989,1999,2005,2007];
+//    const ages = [];
+
+//    for(let i = 0; i < years.length; i++){
+//     ages.push(2037 - years[i]);
+//    }
+//    console.log(ages)
+
+//    // How to use continue and break!
+
+
+// console.log('--- Only String---');
+//    for(i = 0; i < jonas.length ; i++){
+    
+//     if(typeof jonas.length[i] !== 'string') continue;
+//     console.log(jonas[i], typeof jonas[i]);
+//     }
+
+
+// console.log('---Break with number---');
+//    for(i = 0; i < jonas.length ; i++){
+//     if(typeof jonas.length[i] === 'number') break;
+//     console.log(jonas[i], typeof jonas[i]);
+
+
+// }
+
+// Looping Backwards and Loops in Loops!
+
+const jonas = [
+     'Jonas',
+   'Kinsman',
+      2023 - 1990,
+      'teacher',
+      ['Mike','Mai','Steve'],
+      true
+    ]
+// looping backwards
+    for(let i = jonas.length - 1; i >= 0; i-- ){
+      console.log(i,jonas[i]);
+    }
+
+    // looping in loops
+
+    for(exercise = 1; exercise < 4; exercise++){
+      console.log(`------Starting exercise${exercise}`);
+
+      for(rep = 1; rep < 6; rep++){
+         console.log(`Exercise${exercise}: lifting weight repitition ${rep}`);
+      }
+    }
