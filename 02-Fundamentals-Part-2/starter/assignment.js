@@ -225,3 +225,27 @@ and reflect on how much better this solution is */
   //  }
 
   //  console.log(percentages2)
+
+ // #3
+ /*
+ Store this array of arrays into a variable called 'listOfNeighbors'
+[['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 
+'Russia']];
+
+2. Log only the neighboring countries to the console, one by one, not the entire 
+arrays. Log a string like 'Neighbor: Canada' for each country
+
+3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't 
+worry if it's too difficult for you! But you can still try to figure this out anyway  */
+
+// const listOfNeighbors = [['Canada', 'Mexico'],['Spain'],['Norway','Sweden','Russia']];
+
+
+// for(let i = 0; i < listOfNeighbors.length; i++);
+//   for(let y = 0; y < listOfNeighbors[y].length; y++);
+
+
+//   console.log(`Neighbor: ${listOfNeighbors[i][y]}`);
+  
+
+ 

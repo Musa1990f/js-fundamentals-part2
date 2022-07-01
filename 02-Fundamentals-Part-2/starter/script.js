@@ -347,25 +347,53 @@
 
 // Looping Backwards and Loops in Loops!
 
-const jonas = [
-     'Jonas',
-   'Kinsman',
-      2023 - 1990,
-      'teacher',
-      ['Mike','Mai','Steve'],
-      true
-    ]
-// looping backwards
-    for(let i = jonas.length - 1; i >= 0; i-- ){
-      console.log(i,jonas[i]);
-    }
+// const jonas = [
+//      'Jonas',
+//    'Kinsman',
+//       2023 - 1990,
+//       'teacher',
+//       ['Mike','Mai','Steve'],
+//       true
+//     ]
+// // looping backwards
+//     for(let i = jonas.length - 1; i >= 0; i-- ){
+//       console.log(i,jonas[i]);
+//     }
 
-    // looping in loops
+//     // looping in loops
 
-    for(exercise = 1; exercise < 4; exercise++){
-      console.log(`------Starting exercise${exercise}`);
+//     for(exercise = 1; exercise < 4; exercise++){
+//       console.log(`------Starting exercise${exercise}`);
 
-      for(rep = 1; rep < 6; rep++){
-         console.log(`Exercise${exercise}: lifting weight repitition ${rep}`);
-      }
-    }
+//       for(rep = 1; rep < 6; rep++){
+//          console.log(`Exercise${exercise}: lifting weight repitition ${rep}`);
+//       }
+//     }
+
+    // While loop!
+
+    for(let rep = 1; rep <= 10; rep++){
+          console.log(`Lifting weight repetitions ${rep} `);
+       }
+
+       let rep = 1;
+       while(rep <= 10){
+        // console.log(`WHILE: Lifting weight repetitions ${rep} `);
+        rep++;
+       }
+      
+
+       // Rolling dice random number using while loop!
+
+//        let dice = math.trunc(Math.random() *6) + 1;
+// console.log(dice)
+//        while(dice !== 6){
+//         console.log(`You rolled a ${dice}`);
+//         dice = Math.trunc(math.random() * 6) + 1;
+//          if (dice === 6) console.log('Loop is about to end...');
+//         }
+
+
+
+
+
